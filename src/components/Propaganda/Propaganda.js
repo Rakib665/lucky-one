@@ -41,7 +41,7 @@ const Propaganda = () => {
                     ></Cart>)
                 } */}
                 <Cart
-                cart = {cart}
+                cart = {cart} 
                 
                 chooseBtnHandleClick = {chooseBtnHandleClick}
                 ></Cart>

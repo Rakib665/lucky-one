@@ -1,4 +1,4 @@
-# Welcome to Propaganda Vibes
+# `Welcome to Propaganda Vibes`
 
 [My Github Link](https://github.com/Programming-Hero-Web-Course4/lucky-one-Rakib665/blob/main/README.md).
 
@@ -6,18 +6,18 @@
 
 In the project directory, you can run:
 
-### `npm start`
+### `props vs state`
+State:
+The state is an updatable structure that can vary over time and is used to store data or information about the component. A state change can occur as a result of a user action or a system event.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Props:
+Props are components that can only be read. It's an object that stores the value of a tag's attributes and functions similarly to HTML attributes. It allows data to be passed from one component to another.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `How React Works`
+
+React is a JavaScript library  that uses declarative code to design user interfaces in a predictable and efficient manner. It may be used to create single-page apps and mobile apps, as well as more complicated apps when combined with other libraries.
 
 ### `npm run build`
 

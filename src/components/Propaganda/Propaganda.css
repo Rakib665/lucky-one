@@ -10,7 +10,7 @@
 .cart-container{
     background: rgba(255, 153, 0, 0.3);
     width: 264px;
-    height: 944px;
+    /* height: 944px; */
     left: 1176px;
     top: 0px;
     /* position: sticky; */
