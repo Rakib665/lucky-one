@@ -1,8 +1,8 @@
 # Welcome to Propaganda Vibes
 
-[Github Link](https://github.com/facebook/create-react-app).
+[My Github Link](https://github.com/Programming-Hero-Web-Course4/lucky-one-Rakib665/blob/main/README.md).
 
-## Available Scripts
+## After long pain i can build this
 
 In the project directory, you can run:
 
