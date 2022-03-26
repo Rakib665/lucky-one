@@ -5,7 +5,7 @@ import './Propaganda.css'
 const Propaganda = () => {
     const [products,setProducts] = useState([])
     const [cart,setCart] = useState([])
-    //   console.log(cart)
+       console.log(cart.map)
     useEffect(()=>{
         fetch('product.json')
         .then(res=>res.json())
@@ -32,7 +32,20 @@ const Propaganda = () => {
         
     }
     return (
-        <div className='shop'>
+        <div className='club'>
+            <div className="cart-container">
+                {/* {
+                    cart.map(singleCart => <Cart
+                        cart = {singleCart}
+                        chooseBtnHandleClick = {chooseBtnHandleClick}
+                    ></Cart>)
+                } */}
+                <Cart
+                cart = {cart}
+                
+                chooseBtnHandleClick = {chooseBtnHandleClick}
+                ></Cart>
+            </div>
             <div className="products-container">
             {
                 products.map(product=><Product
@@ -42,18 +55,7 @@ const Propaganda = () => {
                 ></Product>)
             }
             </div>
-            <div className="cart-container">
-                {/* {
-                    cart.map(orderSummary => <Cart
-                        cart = {orderSummary}
-                        chooseBtnHandleClick = {chooseBtnHandleClick}
-                    ></Cart>)
-                } */}
-                <Cart
-                cart = {cart}
-                chooseBtnHandleClick = {chooseBtnHandleClick}
-                ></Cart>
-            </div>
+            
         </div>
     );
 };

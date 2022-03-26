@@ -3,12 +3,13 @@ import Name from '../Name/Name';
 import './Cart.css'
 
 const Cart = ({cart,chooseBtnHandleClick}) => {
-    //  console.log(cart)
     let names = [];
      for(const product of cart){
+        console.log(cart[0].id)
+
          names = [...names,product.name] 
      }
-//    console.log(names)
+//   console.log(names)
     return (
         <div>
            
@@ -18,7 +19,6 @@ const Cart = ({cart,chooseBtnHandleClick}) => {
              {
                 names.map(n => <Name
                 name = {n}
-
                 ></Name> )
             }
            
