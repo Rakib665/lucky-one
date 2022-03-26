@@ -5,7 +5,7 @@ import './Propaganda.css'
 const Propaganda = () => {
     const [products,setProducts] = useState([])
     const [cart,setCart] = useState([])
-    //  console.log(products)
+    //   console.log(cart)
     useEffect(()=>{
         fetch('product.json')
         .then(res=>res.json())
@@ -16,6 +16,20 @@ const Propaganda = () => {
         // console.log(product)
         const newCart = [...cart,product]
         setCart(newCart)
+    }
+    const pickRandom = ()=>{
+         let newCart = [...cart];
+         if (newCart.length){
+             let picked = newCart[Math.floor(Math.random() * newCart.length)]
+             newCart = [picked]
+             setCart(newCart)
+         }   
+    }
+    const chooseBtnHandleClick = () =>{
+        // console.log('clicked')
+        pickRandom()
+        // console.log(pickRandom())
+        
     }
     return (
         <div className='shop'>
@@ -29,8 +43,15 @@ const Propaganda = () => {
             }
             </div>
             <div className="cart-container">
+                {/* {
+                    cart.map(orderSummary => <Cart
+                        cart = {orderSummary}
+                        chooseBtnHandleClick = {chooseBtnHandleClick}
+                    ></Cart>)
+                } */}
                 <Cart
                 cart = {cart}
+                chooseBtnHandleClick = {chooseBtnHandleClick}
                 ></Cart>
             </div>
         </div>

@@ -2,13 +2,13 @@ import React from 'react';
 import Name from '../Name/Name';
 import './Cart.css'
 
-const Cart = ({cart}) => {
+const Cart = ({cart,chooseBtnHandleClick}) => {
     //  console.log(cart)
     let names = [];
      for(const product of cart){
          names = [...names,product.name] 
      }
-   
+//    console.log(names)
     return (
         <div>
            
@@ -18,9 +18,11 @@ const Cart = ({cart}) => {
              {
                 names.map(n => <Name
                 name = {n}
-                
+
                 ></Name> )
             }
+           
+            <button onClick={chooseBtnHandleClick} className='choose-btn'>Choose One for me</button>
         </div>
     );
 };

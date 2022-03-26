@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Welcome to Propaganda Vibes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Github Link](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
